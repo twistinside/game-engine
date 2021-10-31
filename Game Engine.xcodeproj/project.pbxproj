@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB302EA6272F1BDA0062CB4B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB302EA5272F1BDA0062CB4B /* GameView.swift */; };
+		CB302EA8272F21F90062CB4B /* MyShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB302EA7272F21F90062CB4B /* MyShaders.metal */; };
 		CB62472C272F10DB000F03A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62472B272F10DB000F03A6 /* AppDelegate.swift */; };
 		CB624731272F10DB000F03A6 /* Game_Engine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB62472F272F10DB000F03A6 /* Game_Engine.xcdatamodeld */; };
 		CB624733272F10DE000F03A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB624732272F10DE000F03A6 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB302EA5272F1BDA0062CB4B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CB302EA7272F21F90062CB4B /* MyShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MyShaders.metal; sourceTree = "<group>"; };
 		CB624728272F10DB000F03A6 /* Game Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB62472B272F10DB000F03A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB624730272F10DB000F03A6 /* Game_Engine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_Engine.xcdatamodel; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			children = (
 				CB302EA4272F14860062CB4B /* Other Files */,
 				CB624734272F10DE000F03A6 /* Main.storyboard */,
+				CB302EA5272F1BDA0062CB4B /* GameView.swift */,
+				CB302EA7272F21F90062CB4B /* MyShaders.metal */,
 			);
 			path = "Game Engine";
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB302EA8272F21F90062CB4B /* MyShaders.metal in Sources */,
 				CB62472C272F10DB000F03A6 /* AppDelegate.swift in Sources */,
+				CB302EA6272F1BDA0062CB4B /* GameView.swift in Sources */,
 				CB624731272F10DB000F03A6 /* Game_Engine.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
