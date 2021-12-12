@@ -12,5 +12,6 @@ class Engine {
         RenderPipelineDescriptorLibrary.initialize()
         RenderPipelineStateLibrary.initialize()
         RenderPipelineDescriptorLibrary.initialize()
+        MeshLibrary.initialize()
     }
 }
