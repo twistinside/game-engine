@@ -1,7 +1,6 @@
 import MetalKit
 
 class GameObject: Node {
-    
     var mesh: Mesh
 
     init(meshType: MeshType) {

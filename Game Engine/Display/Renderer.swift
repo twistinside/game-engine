@@ -11,14 +11,16 @@ extension Renderer: MTKViewDelegate {
     
     func draw(in view: MTKView) {
         guard let drawable = view.currentDrawable,
-              let renderPassDescriptor = view.currentRenderPassDescriptor else { return }
-        let commandBuffer = Engine.commandQueue.makeCommandBuffer()
-        let renderCommandEncoder = commandBuffer?.makeRenderCommandEncoder(descriptor: renderPassDescriptor)
+              let renderPassDescriptor = view.currentRenderPassDescriptor,
+              let commandBuffer = Engine.commandQueue.makeCommandBuffer(),
+              let renderCommandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor:renderPassDescriptor) else {
+                  return
+              }
         
-        player.render(renderCommandEncoder: renderCommandEncoder!)
+        player.render(renderCommandEncoder: renderCommandEncoder)
         
-        renderCommandEncoder?.endEncoding()
-        commandBuffer?.present(drawable)
-        commandBuffer?.commit()
+        renderCommandEncoder.endEncoding()
+        commandBuffer.present(drawable)
+        commandBuffer.commit()
     }
 }

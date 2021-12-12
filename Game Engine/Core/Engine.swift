@@ -7,6 +7,7 @@ class Engine {
     public static func Ignite(device: MTLDevice) {
         self.device = device
         self.commandQueue = device.makeCommandQueue()
+        
         ShaderLibrary.initialize()
         VertexDescriptorLibrary.initialize()
         RenderPipelineDescriptorLibrary.initialize()
