@@ -29,6 +29,7 @@
 		CBEC77602765846F00B51EAB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEC775F2765846F00B51EAB /* Player.swift */; };
 		CBEC77622765851100B51EAB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEC77612765851100B51EAB /* Node.swift */; };
 		CBEC7765276585F600B51EAB /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEC7764276585F600B51EAB /* Renderable.swift */; };
+		CBEC77692765B6F700B51EAB /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEC77682765B6F700B51EAB /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		CBEC775F2765846F00B51EAB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		CBEC77612765851100B51EAB /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		CBEC7764276585F600B51EAB /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		CBEC77682765B6F700B51EAB /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		CB62472A272F10DB000F03A6 /* Game Engine */ = {
 			isa = PBXGroup;
 			children = (
+				CBEC77672765B6ED00B51EAB /* Math */,
 				CB01FD43275D43A3001212F0 /* Core */,
 				CBC3069F275F346D0054B59A /* Game Files */,
 				CB01FD46275D43CA001212F0 /* Libraries */,
@@ -228,6 +231,14 @@
 				CBEC775F2765846F00B51EAB /* Player.swift */,
 			);
 			path = "Game Objects";
+			sourceTree = "<group>";
+		};
+		CBEC77672765B6ED00B51EAB /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				CBEC77682765B6F700B51EAB /* Math.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +382,7 @@
 				CB9D72A4275D4D3C00BB578A /* ShaderLibrary.swift in Sources */,
 				CB01FD48275D4842001212F0 /* Engine.swift in Sources */,
 				CB62472C272F10DB000F03A6 /* AppDelegate.swift in Sources */,
+				CBEC77692765B6F700B51EAB /* Math.swift in Sources */,
 				CB302EA6272F1BDA0062CB4B /* GameView.swift in Sources */,
 				CBEC77622765851100B51EAB /* Node.swift in Sources */,
 				CB01FD42275D3DA7001212F0 /* Types.swift in Sources */,
