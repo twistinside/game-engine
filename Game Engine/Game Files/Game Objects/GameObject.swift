@@ -3,18 +3,12 @@ import MetalKit
 class GameObject: Node {
     var modelConstants = ModelConstants()
     var mesh: Mesh
-    var time: Float = 0
 
     init(meshType: MeshType) {
         mesh = MeshLibrary.mesh(meshType)
     }
     
-    func update(deltaTime: Float) {
-        time += deltaTime
-        self.position.x = cos(time)
-        self.position.y = sin(time)
-        self.scale      = float3(cos(time))
-        self.rotation.z = cos(time)
+    override func update(deltaTime: Float) {
         updateModelConstants()
     }
     

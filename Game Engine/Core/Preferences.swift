@@ -8,6 +8,7 @@ public enum ClearColors {
 }
 
 class Preferences {
-    public static var clearColor: MTLClearColor = ClearColors.green
+    public static var clearColor: MTLClearColor = ClearColors.white
     public static var mainPixelFormat: MTLPixelFormat = MTLPixelFormat.bgra8Unorm
+    public static var startingSceneType: SceneType = .sandbox
 }
