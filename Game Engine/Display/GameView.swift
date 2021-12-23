@@ -10,6 +10,7 @@ class GameView: MTKView {
         Engine.Ignite(device: device!)
         self.clearColor = Preferences.clearColor
         self.colorPixelFormat = Preferences.mainPixelFormat
+        self.depthStencilPixelFormat = Preferences.mainPixelDepthFormat
         self.renderer = Renderer(self)
         self.delegate = renderer
     }

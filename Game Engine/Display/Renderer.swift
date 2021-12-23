@@ -2,6 +2,9 @@ import MetalKit
 
 class Renderer: NSObject {
     public static var screenSize: float2 = float2(0)
+    public static var aspectRatio: Float {
+        return screenSize.x / screenSize.y
+    }
     
     init(_ view: MTKView) {
         super.init()
