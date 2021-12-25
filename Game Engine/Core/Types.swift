@@ -33,3 +33,8 @@ struct SceneConstants: Sizeable {
     var viewMatrix = matrix_identity_float4x4
     var projectionMatrix = matrix_identity_float4x4
 }
+
+struct Material: Sizeable {
+    var color: float4 = float4(0.8, 0.8, 0.8, 1)
+    var useMaterialColor: Bool = false
+}

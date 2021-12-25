@@ -2,17 +2,25 @@ import MetalKit
 
 class SandboxScene: Scene {
     let debugCamera = DebugCamera()
-    var cube = Cube()
     
     override func buildScene() {
         addCamera(debugCamera)
-        debugCamera.position.z = 5
-        addChild(cube)
+        debugCamera.position.z = 13
+        addCubes()
     }
     
-    override func update(deltaTime: Float) {
-        cube.rotation.x += deltaTime
-        cube.rotation.y += deltaTime / 2.0
-        super.update(deltaTime: deltaTime)
-    }
+    func addCubes(){
+            for y in -5..<5 {
+                let posY = Float(y) + 0.5
+                for x in -8..<8 {
+                    let posX = Float(x) + 0.5
+                    let cube = Cube()
+                    cube.position.y = posY
+                    cube.position.x = posX
+                    cube.scale = float3(0.3, 0.3, 0.3)
+                    cube.setColor(ColorUtil.randomColor)
+                    addChild(cube)
+                }
+            }
+        }
 }
